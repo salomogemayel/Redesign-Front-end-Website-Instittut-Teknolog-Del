@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kelola Fasililtas</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="img/Institut Teknologi Del.png" rel="icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        
+    <!-- ======= Header ======= -->
+    <header id="header" class="header-admin fixed-top">
+        <div class="container d-flex align-items-center">
+            <button class="toggle mx-4" id="toggle">
+                <span><a ><i class="fas fa-bars" style="color: #000000;"></i></span>
+            </button>
+
+            <a href="index.php" class="logo me-auto">
+                <img src="img/Institut Teknologi Del.png" alt="" class="img-fluid">
+                <h1 class="logo me-auto align-items-left"><a href="#" class="ms-0">Institut Teknologi Del</a></h1>
+            </a>
+
+            <nav id="navbar" class="navbar-admin navbar order-last order-lg-0">
+                <i class="bi bi-list mobile-nav-toggle mx-4"></i>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+         
+    <div class="sidebar" id='sidebar'>
+        <nav id="navbar" class="navbar">
+            <ul class="nama">
+                <h5 class="ulasan-img"><i class="fas fa-user mx-3" style="color: #FFFFFF;"></i></h5>               
+            </ul>
+        </nav>
+        <ul class="mt-4">
+            <li><a href="admin_dashboard.html"><i class="fas fa-chart-pie mx-2"></i>  Dashboard</a></li>
+            <li><a href="index.html"><i class="fas fa-home mx-2"></i> Homepage</a></li>
+            <li><a href="admin_program_pendidikan.html"><i class="fas fa-book mx-2"></i> Kelola Program Pendidikan</a></li>
+            <li><a href="admin_pengumuman.html"><i class="fas fa-newspaper mx-2"></i> Kelola Pengumuman</a></li>
+            <li><a href="admin_lembaga.html"><i class="fas fa-folder-tree mx-2"></i> Kelola Lembaga</a></li>
+            <li><a href="admin_fasilitas.html"><i class="fas fa-building ms-2 me-3"></i> Kelola Fasilitas</a></li>
+            <li><a href="#"><i class="fas fa-users mx-2"></i> Manajemen Mahasiswa</a></li>
+            <li><a href="#"><i class="fas fa-chalkboard-teacher mx-2"></i> Manajemen Dosen</a></li>            
+            <li><a href="#"><i class="fas fa-calendar mx-2"></i> Jadwal Kuliah</a></li>
+            <li><a href="#"><i class="fas fa-file-alt mx-2"></i> Laporan Akademik</a></li>
+            <li><a href="#"><i class="fas fa-cogs mx-2"></i> Pengaturan</a></li>            
+            <li><a href="#"><i class="fas fa-sign-out-alt mx-2"></i> Logout</a></li>
+        </ul>
+    </div>
+
+        
+    <div class="content mb-5 mt-5">
+        <div class="container mt-4">
+            <br><br>
+            <h1 class="mt-5">Fasilitas</h1>
+            <button type="button" class="btn btn-primary mt-4 mb-2"><i class="fa-solid fa-plus me-1"></i> Tambah Fasilitas</button>
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Fasilitas</th>
+                    <th scope="col">Action</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="img/Fasilitas/Asrama.jpg" class="img-fluid" width="380" alt="">
+                            </div>
+                            <div class="col-6">
+                                <div class="card-text-admin">                
+                                    <h5 class="card-title">Asrama Putra & Putri</h5>
+                                    <p class="card-text">Asrama adalah tempat tinggal bagi para mahasiswa yang terdiri dari 4 Asrama Putra dan 4 Asrama Putri.</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </td>
+                    <td>
+                        <form method="post">
+                            <input type="hidden" value="">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus fasilitas ini?')">Hapus</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-primary">Edit</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="img/Fasilitas/Perpustakaan.jpg" class="img-fluid" width="380" alt="">
+                            </div>
+                            <div class="col-6">
+                                <div class="card-text-admin">                
+                                    <h5 class="card-title">Perpustakaan</h5>
+                                    <p class="card-text">Perpustakaan IT Del sebagai pusat informasi dan juga penyedia layanan informasi berteknologi tinggi.</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </td>
+                    <td>
+                        <form method="post">
+                            <input type="hidden" value="">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus fasilitas ini?')">Hapus</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-primary">Edit</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="img/Fasilitas/Kantin.jpg" class="img-fluid" width="380" alt="">
+                            </div>
+                            <div class="col-6">
+                                <div class="card-text-admin">                
+                                    <h5 class="card-title">Kantin</h5>
+                                    <p class="card-text">IT Del memiliki 3 bangunan kantin sebagai tempat mahasiswa malaksanakan makan pagi, siang maupun malam</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </td>
+                    <td>
+                        <form method="post">
+                            <input type="hidden" value="">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus fasilitas ini?')">Hapus</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-primary">Edit</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="img/Fasilitas/Guest House.jpg" class="img-fluid" width="380" alt="">
+                            </div>
+                            <div class="col-6">
+                                <div class="card-text-admin">                
+                                    <h5 class="card-title">Guest House</h5>
+                                    <p class="card-text">Akomodasi untuk tamu yang berkunjung yang teridiri dari 6 unit guest house yang dilengkapi dengan furniture yang lengkap.</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </td>
+                    <td>
+                        <form method="post">
+                            <input type="hidden" value="">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus fasilitas ini?')">Hapus</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-primary">Edit</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="img/Fasilitas/Perumahan Dosen.jpg" class="img-fluid" width="380" alt="">
+                            </div>
+                            <div class="col-6">
+                                <div class="card-text-admin">                
+                                    <h5 class="card-title">Perumahan Dosen</h5>
+                                    <p class="card-text">Akomodasi bagi dosen dengan lingkungan dan fasilitas yang ergonomis dengan beberapa tipe perumahan Rumah Dosen (RD), Mansionette, Town House dan studio.</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </td>
+                    <td>
+                        <form method="post">
+                            <input type="hidden" value="">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus fasilitas ini?')">Hapus</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-primary">Edit</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="img/Fasilitas/Lab dan Kelas.jpg" class="img-fluid" width="380" alt="">
+                            </div>
+                            <div class="col-6">
+                                <div class="card-text-admin">                
+                                    <h5 class="card-title">Laboratorium dan Kelas</h5>
+                                    <p class="card-text">IT Del memiliki laboratorium komputer dan ruang kelas yang luas dan memadai yang terdiri dari 8 laboratorium.</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </td>
+                    <td>
+                        <form method="post">
+                            <input type="hidden" value="">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus fasilitas ini?')">Hapus</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-primary">Edit</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="img/Fasilitas/Klinik.jpg" class="img-fluid" width="380" alt="">
+                            </div>
+                            <div class="col-6">
+                                <div class="card-text-admin">                
+                                    <h5 class="card-title">Klinik</h5>
+                                    <p class="card-text">IT Del menyediakan klinik untuk melayani kesehatan bagi siswa, mahasiswa, dan para pegawai yang ada di IT Del dengan layanan yang lengkap.</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </td>
+                    <td>
+                        <form method="post">
+                            <input type="hidden" value="">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus fasilitas ini?')">Hapus</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-primary">Edit</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="img/Fasilitas/Hiburan dan Olahraga.jpg" class="img-fluid" width="380" alt="">
+                            </div>
+                            <div class="col-6">
+                                <div class="card-text-admin">                
+                                    <h5 class="card-title">Hiburan dan Olahraga</h5>
+                                    <p class="card-text">Sarana olahraga yang disediakan terdiri dari Basket, Futsal, Voli, Badminton dan Tennis meja serta sarana olahraga seperti Meja Billiard, Televisi dan Alat musik.</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </td>
+                    <td>
+                        <form method="post">
+                            <input type="hidden" value="">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus fasilitas ini?')">Hapus</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-primary">Edit</a>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="img/Fasilitas/Open Theater.jpg" class="img-fluid" width="380" alt="">
+                            </div>
+                            <div class="col-6">
+                                <div class="card-text-admin">                
+                                    <h5 class="card-title">Open Theater</h5>
+                                    <p class="card-text">Open Theater Ruang terbuka yang langsung menghadap ke Danau Toba yang dapat digunakan untuk bersantai, kerja kelompok dan belajar individu.</p>
+                                </div>
+                            </div>
+                        </div>                        
+                    </td>
+                    <td>
+                        <form method="post">
+                            <input type="hidden" value="">
+                            <button type="submit" class="btn btn-danger" onclick="return confirm('Apakah anda yakin ingin menghapus fasilitas ini?')">Hapus</button>
+                        </form>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-primary">Edit</a>
+                    </td>
+                  </tr>
+            </table>
+            
+        </div>
+    </div>
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+
+            <div class="footer-top">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Institut Teknologi Del</p>
+                    <p>Jl. Sisingamangaraja, Sitoluama</p>
+                    <p>Laguboti,</p>
+                    <p>Toba Samosir,</p>
+                    <p>Sumatera Utara,</p>
+                    <p>Indonesia</p><br>
+        
+                    <p>Telp : +62 632 331234</p>
+                    <p>Fax   : +62 632 331116</p><br>
+                    
+                    <p>Website : hhtp://ww.del.ac.id</p>
+                    <p>email   : info@del.ac.id</p>
+                    <p>Karir   : karir@del.ac.id</p>
+                  </div>
+            
+                  <div class="col-lg-4  col-md-6 footer-links">
+                    <ul>
+                        <h3>Find Us On</h3>
+                        <li><a href="https://www.youtube.com/@institutteknologidel1337"><i class="fab fa-youtube fa-xl me-2"></i> Institut Teknologi Del</a></li>
+          
+                        <li><a href="https://www.instagram.com/it.del/"><i class="fa-brands fa-instagram fa-xl me-2"></i> @it.del</a></li>
+                        <li><a href="https://web.facebook.com/Institut.Teknologi.Del/?_rdc=1&_rdr"><i class="fa-brands fa-facebook fa-xl me-2"></i> Institut Teknologi Del</a></li>
+                        <li><a href="https://twitter.com/institut_del?lang=en"><i class="fa-brands fa-twitter fa-xl me-2"></i> @institut_del</a></li>
+                      </ul>
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+        
+            <div class="footer-bottom">
+            <div class="container d-md-flex">
+        
+                <div class="me-md-auto text-center text-md-start mt-4">
+                  <div class="copyright">
+                    &copy; Copyright <strong><span>Institut Teknologi Del</span></strong>. All Rights Reserved
+                  </div>
+                </div>
+                <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                    <img src="img/Institut Teknologi Del.png" class="footer-logo" alt="Logo 1">
+                    <img src="img/yayasan del.jpg" class="footer-logo" alt="Logo 1">
+                    <img src="img/sma del.jpg" class="footer-logo" alt="Logo 2">
+                    <img src="img/itb.jpg" class="footer-logo" alt="Logo 3">            
+                </div>
+              </div>
+            </div>
+        
+            </footer><!-- End Footer -->
+        
+        
+
+
+        <script>
+            var btn = document.querySelector('.toggle');
+            var btnst = true;
+            btn.onclick = function () {
+                if (btnst == true) {
+                    document.querySelector('.toggle span').classList.add('toggle');
+                    document.getElementById('sidebar').classList.add('sidebarshow');
+                    btnst = false;
+                } else if (btnst == false) {
+                    document.querySelector('.toggle span').classList.remove('toggle');
+                    document.getElementById('sidebar').classList.remove('sidebarshow');
+                    btnst = true;
+                }
+            }
+        </script>
+
+<script>
+    // Fungsi untuk menambahkan catatan log ke dalam list
+    function addLogEntry(message) {
+        var logList = document.getElementById("logList");
+
+        // Buat elemen list item
+        var listItem = document.createElement("li");
+        listItem.className = "list-group-item";
+        listItem.textContent = message;
+
+        // Tambahkan list item ke dalam list
+        logList.appendChild(listItem);
+    }
+
+    // Contoh penggunaan: Tambahkan beberapa catatan log
+    addLogEntry("Admin 'admin123' berhasil login ke sistem.");
+    addLogEntry("Profil mahasiswa '12345' diperbarui oleh admin 'admin123'.");
+    addLogEntry("Pengguna baru 'dosen456' ditambahkan oleh admin 'admin123'.");
+    // ... tambahkan catatan log lainnya sesuai kebutuhan
+</script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+</html>

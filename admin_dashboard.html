@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="img/Institut Teknologi Del.png" rel="icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        
+    <!-- ======= Header ======= -->
+    <header id="header" class="header-admin fixed-top">
+        <div class="container d-flex align-items-center">
+            <button class="toggle mx-4" id="toggle">
+                <span><a ><i class="fas fa-bars" style="color: #000000;"></i></span>
+            </button>
+
+            <a href="admin_dashboard.html" class="logo me-auto">
+                <img src="img/Institut Teknologi Del.png" alt="" class="img-fluid">
+                <h1 class="logo me-auto align-items-left"><a href="admin_dashboard.html" class="ms-0">Institut Teknologi Del</a></h1>
+            </a>
+
+            <nav id="navbar" class="navbar-admin navbar order-last order-lg-0">
+                <i class="bi bi-list mobile-nav-toggle mx-4"></i>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+
+         
+    <div class="sidebar" id='sidebar'>
+        <nav id="navbar" class="navbar">
+            <ul class="nama">
+                <h5 class="ulasan-img"><i class="fas fa-user mx-3" style="color: #FFFFFF;"></i></h5>               
+            </ul>
+        </nav>
+        <ul class="mt-4">
+            <li><a href="admin_dashboard.html"><i class="fas fa-chart-pie mx-2"></i>  Dashboard</a></li>
+            <li><a href="index.html"><i class="fas fa-home mx-2"></i> Homepage</a></li>
+            <li><a href="admin_program_pendidikan.html"><i class="fas fa-book mx-2"></i> Kelola Program Pendidikan</a></li>
+            <li><a href="admin_pengumuman.html"><i class="fas fa-newspaper mx-2"></i> Kelola Pengumuman</a></li>
+            <li><a href="admin_lembaga.html"><i class="fas fa-folder-tree mx-2"></i> Kelola Lembaga</a></li>
+            <li><a href="admin_fasilitas.html"><i class="fas fa-building ms-2 me-3"></i> Kelola Fasilitas</a></li>
+            <li><a href="#"><i class="fas fa-users mx-2"></i> Manajemen Mahasiswa</a></li>
+            <li><a href="#"><i class="fas fa-chalkboard-teacher mx-2"></i> Manajemen Dosen</a></li>            
+            <li><a href="#"><i class="fas fa-calendar mx-2"></i> Jadwal Kuliah</a></li>
+            <li><a href="#"><i class="fas fa-file-alt mx-2"></i> Laporan Akademik</a></li>
+            <li><a href="#"><i class="fas fa-cogs mx-2"></i> Pengaturan</a></li>            
+            <li><a href="#"><i class="fas fa-sign-out-alt mx-2"></i> Logout</a></li>
+        </ul>
+    </div>
+
+        
+    <div class="content mb-5 mt-5">
+        <div class="container mt-4">
+          <br>
+            <h1 class="mt-5">Dashboard Admin</h1><hr class="mb-5">
+            <div class="row mb-5">
+                <div class="col-5">
+                    <h3>Statistik Pengunjung</h3>
+                    <div class="visitor-container mt-3  ">
+                        <div class="visitor-stats">
+                            <h5>Total Visitors: 3.164.053</h5>
+                            <h5>Page Views: 75.773</h5>
+                            <h5>Last 7 Days Visits: 2.832</h5>
+                            <h5>Unique Visitors: 120.724</h5>
+                            <h5>Page Views: 75.00</h5>
+                            <h5>Total Pages: 246</h5>
+                            <h5>Average Time Spent: 5 minutes</h5>
+                            <h5>Popular Pages: <a href="#">Fakultas Vokasi</a>, <a href="#">Homepage</a>, <a href="#">Tentang Del</a></h5>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-7">
+                    <h3>Log Aktivitas</h3>
+                    <ul class="list-group" style="max-height: 300px; overflow-y: auto;">
+                        <li class="list-group-item">Admin 'admin123' berhasil login ke sistem.</li>
+                        <li class="list-group-item">Berita "BK71" dengan judul "Inovasi Terkini dalam Teknologi Pendidikan" telah diunggah.</li>
+                        <li class="list-group-item">Penambahan Galeri Foto: Foto-Foto Terbaru Kegiatan Kampus Tersedia di Galeri.</li>
+                        <li class="list-group-item">Pembaruan Kontak: Nomor Telepon dan Alamat Email Sekretariat Telah Diperbarui.</li>
+                        <li class="list-group-item">Profil mahasiswa '12345' diperbarui oleh admin 'admin123'.</li>
+                        <li class="list-group-item">Pengguna baru 'dosen456' ditambahkan oleh admin 'admin123'.</li>
+                        <li class="list-group-item">Pembaruan sistem: Versi 2.0.1 sekarang tersedia untuk diunduh.</li>
+                        <li class="list-group-item">Peringatan: Ruang penyimpanan hampir penuh. Segera lakukan pembersihan data.</li>
+                        <li class="list-group-item">Pertanyaan Diterima: Pengunjung memberikan pertanyaan tentang program studi Teknik Informatika.</li>
+                        <li class="list-group-item">Like untuk Artikel: Artikel Terkait Inovasi Pendidikan Menerima Banyak Like dari Pengunjung.</li>
+                        <li class="list-group-item">Share Acara Kampus: Acara Reuni Alumni Dibagikan oleh Sejumlah Pengunjung.</li>
+                        <li class="list-group-item">Feedback Positif: Pengunjung memberikan feedback positif tentang tampilan dan navigasi website.</li>
+                        <li class="list-group-item">Share Informasi Beasiswa: Pengunjung Membagikan Informasi Beasiswa ke Media Sosial.</li>
+                    </ul>
+     
+                </div>
+            </div>
+            
+            <hr><br>
+            <div class="row" style="max-height: 500px;">
+                <div class="col-8">
+                    <h3 class="mb-3">Berita Terbaru</h3>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="row">            
+                              <div class="col-6">
+                                <div class="card">
+                                  <img src="img/Berita/Konsulat.jpg" class="card-img-top" alt="...">
+                                  <div class="card-text">
+                                    <div class=" row">
+                                      <div class="col-4">
+                                          <p>27/11/2023</p>
+                                      </div>
+                                      <div class="col-8 text-end">
+                                          Kuliah Umum
+                                      </div>
+                                    </div>                  
+                                    <h5 class="card-title">Kuliah Umum oleh Konsulat Amerika Serikat terkait Suku Asli Amerika Serikat</h5>
+                                    <p class="card-text">Institut Teknologi Del menerima kunjungan dari Ibu Kristy Mordhorts (Konsulat Amerika Serikat di Medan).</p>
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="col-6">
+                                <div class="card">
+                                  <img src="img/Berita/Sosialisasikan Program MBKM.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-text">
+                                    <div class=" row">
+                                      <div class="col-4">
+                                          <p>24/11/2023</p>
+                                      </div>
+                                      <div class="col-8 text-end">
+                                          Mahasiswa
+                                      </div>
+                                    </div>                  
+                                    <h5 class="card-title">IT Del Sosialisasikan Program MBKM kepada Mahasiswa</h5>
+                                    <p class="card-text">Divisi Pembelajaran Diluar Kampus – UPT PP ESTEM melaksanakan sosialisasi MBKM (Merdeka Belajar Kampus Merdeka)</p>
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                
+                          <div class="carousel-item">
+                            <div class="row">
+                              <div class="col-6">
+                                <div class="card">
+                                  <img src="img/KMI EXPO.jpeg" class="card-img-top" alt="...">
+                                  <div class="card-text">
+                                    <div class=" row">
+                                      <div class="col-4">
+                                          <p>22/11/2023</p>
+                                      </div>
+                                      <div class="col-8 text-end">
+                                          Mahasiswa
+                                      </div>
+                                    </div>                  
+                                    <h5 class="card-title">IT Del Ikuti Kegiatan KMI EXPO XIV di Bali Hingga Terima Penghargaan Pendamping Terbaik</h5>
+                                    <p class="card-text">Institut Teknologi Del turut serta mengikuti kegiatan kompetisi KMI EXPO XIV 2023.</p>
+                                  </div>
+                                </div>
+                              </div> 
+                
+                              <div class="col-6">
+                                <div class="card">
+                                  <img src="img/Gibran.jpg" class="card-img-top" alt="...">
+                                  <div class="card-text">
+                                    <div class=" row">
+                                      <div class="col-4">
+                                          <p>20/11/2023</p>
+                                      </div>
+                                      <div class="col-8 text-end">
+                                          Kuliah Umum
+                                      </div>
+                                    </div>                  
+                                    <h5 class="card-title">Bapak Gibran Rakabuming Raka Beri Kuliah Umum kepada Mahasiswa IT Del terkait “Pemimpin Milenial”</h5>
+                                    <p class="card-text">Kunjungan Bapak Gibran Rakabuming Raka, sekaligus menjadi pembicara pada Kuliah Umum.</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                
+                          <div class="carousel-item">
+                            <div class="row">            
+                              <div class="col-6">
+                                <div class="card">
+                                  <img src="img/ICT.jpg" class="card-img-top" alt="...">
+                                  <div class="card-text">
+                                    <div class=" row">
+                                      <div class="col-4">
+                                          <p>06/06/2023</p>
+                                      </div>
+                                      <div class="col-8 text-end">
+                                          Event
+                                      </div>
+                                    </div>                  
+                                    <h5 class="card-title">IT Del Menjadi Tuan Rumah 29th IEEE ICT Conference</h5>
+                                    <p class="card-text">Institut Teknologi Del berperan sebagai host dalam International Conference on Telecommunications (ICT) untuk edisi yang ke-29.</p>
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <div class="col-6">
+                                <div class="card">
+                                  <img src="img/Rakor.jpg" class="card-img-top" alt="...">
+                                  <div class="card-text">
+                                    <div class=" row">
+                                      <div class="col-4">
+                                          <p>06/06/2023</p>
+                                      </div>
+                                      <div class="col-8 text-end">
+                                          Mahasiswa
+                                      </div>
+                                    </div>                  
+                                    <h5 class="card-title">Rapat Koordinasi Keluarga Mahasiswa Organisasi IT Del Periode 2023/2024</h5>
+                                    <p class="card-text">Pada Hari Jumat, 27 Oktober 2023 diadakan Rapat Koordinasi KM-IT Del Periode 2023/2024.</p>
+                                  </div>
+                                </div>
+                              </div>
+                
+                              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                
+                              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <h3 class="mb-3">Pertanyaan Masuk</h3>
+                    <div class="pertanyaan" style="max-height: 400px; overflow-y: auto;">
+                        <div class="card">
+                            <div class="card-header">                        
+                            </div>
+                            <div class="card-body">
+                                <!-- Loop atau tampilkan pertanyaan-pertanyaan yang masuk di sini -->
+                                <div class="question">
+                                    <p>Dari: <strong>Nama Pengirim</strong></p>
+                                    <p>Email: <strong>email@example.com</strong></p>
+                                    <p>Pertanyaan: <strong>Bagaimana cara mendaftar program studi A?</strong></p>
+                                    <a href="#" class="btn btn-primary my-3">Berikan Tanggapan</a>
+                                </div>
+                            </div>                        
+                        </div>
+                        
+                        <div class="card mt-4">
+                            <div class="card-header">                        
+                            </div>
+                            <div class="card-body">
+                                <!-- Loop atau tampilkan pertanyaan-pertanyaan yang masuk di sini -->
+                                <div class="question">
+                                    <p>Dari: <strong>Nama Pengirim 2</strong></p>
+                                    <p>Email: <strong>email2@example.com</strong></p>
+                                    <p>Pertanyaan: <strong>Apa syarat pendaftaran program studi B?</strong></p>
+                                    <a href="#" class="btn btn-primary my-3">Berikan Tanggapan</a>
+                                </div>
+                            </div>                        
+                        </div>
+        
+                        <div class="card mt-4">
+                            <div class="card-header">                        
+                            </div>
+                            <div class="card-body">
+                                <!-- Loop atau tampilkan pertanyaan-pertanyaan yang masuk di sini -->
+                                <div class="question">
+                                    <p>Dari: <strong>Nama Pengirim 3</strong></p>
+                                    <p>Email: <strong>email3@example.com</strong></p>
+                                    <p>Pertanyaan: <strong>Ada program beasiswa yang tersedia?</strong></p>
+                                    <a href="#" class="btn btn-primary my-3">Berikan Tanggapan</a>
+                                </div>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <br><br><br><hr><br>
+    
+            <h3>Statistik Kampus</h3>
+            <p>Statistik umum kampus.</p>
+    
+            <div class="row">
+                <!-- Jumlah Dosen -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Jumlah Dosen</h5>
+                            <p class="card-text">Total dosen yang aktif mengajar di kampus saat ini : <br> <span class="text-primary">144 Pengajar</span></p>
+                            <a href="#" class="btn btn-primary my-3">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Prosentase Mahasiswa Lulus -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Persentase Mahasiswa Lulus</h5>
+                            <p class="card-text">Persentase mahasiswa yang telah lulus dari program studi masing-masing: <br><span class="text-primary">93%</span></p>
+                            <a href="#" class="btn btn-primary my-3">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Ketersediaan Fasilitas -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Ketersediaan Fasilitas</h5>
+                            <p class="card-text">Informasi tentang ketersediaan dan penggunaan fasilitas kampus</p>
+                            <a href="#" class="btn btn-primary my-3">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+       <!-- ======= Footer ======= -->
+       <footer id="footer">
+
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h3>Contact Us</h3>
+                <p>Institut Teknologi Del</p>
+                <p>Jl. Sisingamangaraja, Sitoluama</p>
+                <p>Laguboti,</p>
+                <p>Toba Samosir,</p>
+                <p>Sumatera Utara,</p>
+                <p>Indonesia</p><br>
+    
+                <p>Telp : +62 632 331234</p>
+                <p>Fax   : +62 632 331116</p><br>
+                
+                <p>Website : hhtp://ww.del.ac.id</p>
+                <p>email   : info@del.ac.id</p>
+                <p>Karir   : karir@del.ac.id</p>
+              </div>
+        
+              <div class="col-lg-4  col-md-6 footer-links">
+                <ul>
+                  <h3>Find Us On</h3>
+                  <li><a href="https://www.youtube.com/@institutteknologidel1337"><i class="fab fa-youtube fa-xl me-2"></i> Institut Teknologi Del</a></li>
+    
+                  <li><a href="https://www.instagram.com/it.del/"><i class="fa-brands fa-instagram fa-xl me-2"></i> @it.del</a></li>
+                  <li><a href="https://web.facebook.com/Institut.Teknologi.Del/?_rdc=1&_rdr"><i class="fa-brands fa-facebook fa-xl me-2"></i> Institut Teknologi Del</a></li>
+                  <li><a href="https://twitter.com/institut_del?lang=en"><i class="fa-brands fa-twitter fa-xl me-2"></i> @institut_del</a></li>
+                </ul>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+        <div class="container d-md-flex">
+    
+            <div class="me-md-auto text-center text-md-start mt-4">
+              <div class="copyright">
+                &copy; Copyright <strong><span>Institut Teknologi Del</span></strong>. All Rights Reserved
+              </div>
+            </div>
+            <div class="social-links text-center text-md-right pt-3 pt-md-0">
+                <img src="img/Institut Teknologi Del.png" class="footer-logo" alt="Logo 1">
+                <img src="img/yayasan del.jpg" class="footer-logo" alt="Logo 1">
+                <img src="img/sma del.jpg" class="footer-logo" alt="Logo 2">
+                <img src="img/itb.jpg" class="footer-logo" alt="Logo 3">            
+            </div>
+          </div>
+        </div>
+    
+        </footer><!-- End Footer -->
+        
+        
+
+
+        <script>
+            var btn = document.querySelector('.toggle');
+            var btnst = true;
+            btn.onclick = function () {
+                if (btnst == true) {
+                    document.querySelector('.toggle span').classList.add('toggle');
+                    document.getElementById('sidebar').classList.add('sidebarshow');
+                    btnst = false;
+                } else if (btnst == false) {
+                    document.querySelector('.toggle span').classList.remove('toggle');
+                    document.getElementById('sidebar').classList.remove('sidebarshow');
+                    btnst = true;
+                }
+            }
+        </script>
+
+<script>
+    // Fungsi untuk menambahkan catatan log ke dalam list
+    function addLogEntry(message) {
+        var logList = document.getElementById("logList");
+
+        // Buat elemen list item
+        var listItem = document.createElement("li");
+        listItem.className = "list-group-item";
+        listItem.textContent = message;
+
+        // Tambahkan list item ke dalam list
+        logList.appendChild(listItem);
+    }
+
+    // Contoh penggunaan: Tambahkan beberapa catatan log
+    addLogEntry("Admin 'admin123' berhasil login ke sistem.");
+    addLogEntry("Profil mahasiswa '12345' diperbarui oleh admin 'admin123'.");
+    addLogEntry("Pengguna baru 'dosen456' ditambahkan oleh admin 'admin123'.");
+    // ... tambahkan catatan log lainnya sesuai kebutuhan
+</script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+</html>
